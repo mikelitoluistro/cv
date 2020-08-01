@@ -1,0 +1,255 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+/* The navigation bar */
+#navigation-bar {
+  /* Set the navbar to fixed position */
+  position: fixed;
+  /* Position the navbar at the top of the page */
+  top: 0;
+  /* Full width */
+  width: 100%;
+}
+
+h2.expertise-heading {
+  padding: 1.5% 0 1.5% 0;
+  font-size: 3rem;
+  background-color: #6c5ce7;
+}
+
+h3.licenses-and-certifications-heading {
+  padding: 1.5% 0 1.5% 0;
+  font-size: 3rem;
+  background-color: #6c5ce7;
+}
+
+h4.experience-heading {
+  padding: 1.5% 0 1.5% 0;
+  font-size: 3rem;
+  background-color: #6c5ce7;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* About Me */
+
+.row {
+  width: 50%;
+  text-align: left;
+}
+
+.profile-picture {
+  width: 30%;
+  float: left;
+  margin-right: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
+
+}
+
+.profile-about {
+  font-size: 4vw;
+  position: static;
+}
+
+.profile-info {
+  font-size: 1vw;
+  }
+
+#profile {
+  background-color: #7fdbda;
+  padding: 100px 0 50px 50px;
+}
+
+
+/* .profile-picture {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
+  margin: 85px 30px 50px 30px;
+  float: left;
+} */
+
+/* .about {
+  padding: 150px 0 150px 0;
+
+} */
+
+/* Expertise Section */
+.expertise-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.code-img {
+  width: 30%;
+  float: left;
+  margin-right: 30px;
+}
+
+.amazon-img {
+  width: 25%;
+  float: right;
+  margin-right: 30px;
+}
+
+.kubernetes-img {
+  width: 30%;
+  float: left;
+  margin-right: 30px;
+}
+
+.terraform-img {
+  width: 30%;
+  float: right;
+  margin-right: 30px;
+}
+
+.ansible-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.python-img {
+  width: 20%;
+  float: right;
+  margin-right: 30px;
+}
+
+.troubleshooting-img {
+  width: 30%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Licenses and certificate Section */
+.certificate-img {
+  border: 3px solid #130f40;
+  margin: 50px auto 0px auto;
+  width: 1000px;
+}
+
+.col-lg-12 {
+  position: static;
+}
+
+.btn-oci {
+  /* position: relative; */
+  margin: 5px auto 0px auto;
+  width: 1000px;
+}
+
+.btn-aws {
+  /* position: relative; */
+  margin: 5px auto 0px auto;
+  width: 1000px;
+}
+
+.btn-machine-learning {
+  /* position: relative; */
+  margin: 5px auto 0px auto;
+  width: 1000px;
+}
+
+.btn-full-stack-udemy {
+  /* position: relative; */
+  margin: 5px auto 0px auto;
+  width: 1000px;
+}
+
+.btn-python-cloud-academy {
+  /* position: relative; */
+  margin: 5px auto 0px auto;
+  width: 1000px;
+}
+
+.btn-web-development-udemy {
+  /* position: relative; */
+  margin: 5px auto 0px auto;
+  width: 1000px;
+}
+
+img.certificate-globe-telecom {
+  margin-bottom: 50px;
+}
+
+/* Experience Section */
+.experience-row {
+  border: 5px solid #3498db;
+  margin: 50px auto 0 auto;
+  width: auto;
+}
+
+.date-work {
+  font-size: 35px;
+  border: 2px solid black;
+}
+
+.date {
+  border: 2px solid black;
+}
+
+.work {
+  border: 2px solid black;
+}
+
+.experience-date {
+  border: 2px solid black;
+}
+
+.experience-position {
+  border: 1px solid black;
+  text-align: justify;
+}
+
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+  font-size: 50px;
+}
+
+/* Scroll Back to Top Button */
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: green;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
