@@ -48,6 +48,7 @@ p {
 
 .profile-picture {
   width: 30%;
+  height: auto;
   float: left;
   margin-right: 30px;
   border-radius: 50%;
@@ -72,7 +73,7 @@ p {
 
 /* .profile-picture {
   width: 20%;
-  height: auto;
+  
   border-radius: 50%;
   box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
   margin: 85px 30px 50px 30px;
