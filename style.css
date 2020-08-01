@@ -42,7 +42,7 @@ p {
 }
 
 .profile-picture {
-  width: 30%;
+  width: auto;
   float: left;
   margin-right: 30px;
   /* border-radius: 50%; */
