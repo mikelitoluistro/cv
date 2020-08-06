@@ -40,12 +40,16 @@ p {
 }
 
 .profile-picture {
-  max-width: 30%;
+  width: auto;
   height: auto;
   float: left;
   margin-right: 30px;
   border-radius: 50%;
   /* box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18); */
+}
+
+.profile-info {
+  padding-top: 25px;
 }
 
 
