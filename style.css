@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Table Hover */
 .table tbody tr:hover td, .table tbody tr:hover th {
-    background-color: #7fdbda;
+  background-color: #7fdbda;
 }
 
 /* The navigation bar */
@@ -17,18 +17,79 @@ h1, h2, h3, h4, h5, h6 {
   /* Set the navbar to fixed position */
   /* position: fixed; */
   /* Position the navbar at the top of the page */
-  top: 0;
   /* Full width */
   width: 100%;
 }
 
-
-p {
-  color: #8f8f8f;
+/* Profile Heading*/
+#heading-primary {
+  background-image: url("images/background-photo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  #heading-primary {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(images/background-photo-mobile-devices.jpg);
+  }
+}
+
+.main-heading {
+  color: #66BFBF;
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+}
+
+/* If the screen size is 375px to 500px wide */
+@media (min-width: 375px) and (max-width: 500px) {
+  .main-heading {
+    font-size: 3.625rem;
+  }
+}
+
+/* If the screen size is 501px to 768px wide */
+@media (min-width: 501px) and (max-width: 768px) {
+  .main-heading {
+    font-size: 4.625rem;
+  }
+}
+
+/* If the screen size is 769px to 800px wide */
+@media (min-width: 769px) and (max-width: 800px) {
+  .main-heading {
+    font-size: 5.625rem;
+  }
+}
+
+/* If the screen size is 800px to 1536px wide */
+@media (min-width: 800px) and (max-width: 1536px) {
+  .main-heading {
+    font-size: 5.625rem;
+  }
+}
+
+.position {
+  color: #ecf0f1;
+  font-size: 1rem;
+}
+
+.aws {
+  font-size: 24px;
+}
+
+
+
+
 /*Profile info*/
- #profile {
+#profile-info {
   background-color: #7fdbda;
   padding: 50px 0 50px 0;
 }
@@ -40,18 +101,18 @@ p {
 }
 
 .profile-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: auto;
   height: auto;
-  float: left;
-  margin-right: 30px;
   border-radius: 50%;
-  /* box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18); */
 }
 
-.profile-info {
+.profile-about {
   padding-top: 25px;
+  text-align: center;
 }
-
 
 /* Expertise Section */
 h2.expertise-heading {
@@ -109,7 +170,7 @@ h2.expertise-heading {
 }
 
 /* Licenses and certificate Section */
-h3.licenses-and-certifications-heading {
+h2.licenses-and-certifications-heading {
   padding: 1.5% 0 1.5% 0;
   font-size: 3rem;
   background-color: #6c5ce7;
@@ -166,12 +227,12 @@ img.certificate-globe-telecom {
 }
 
 /* Experience Section */
-
-.experience-heading {
+h2.experience-heading {
   padding: 1.5% 0 1.5% 0;
   font-size: 3rem;
   background-color: #6c5ce7;
 }
+
 .experience-row {
   border: 5px solid #3498db;
   margin: 50px auto 50px auto;
@@ -201,7 +262,7 @@ img.certificate-globe-telecom {
 }
 
 /* Awards Section */
-.award-heading {
+h2.award-heading {
   padding: 1.5% 0 1.5% 0;
   font-size: 3rem;
   background-color: #6c5ce7;
@@ -238,14 +299,22 @@ img.certificate-globe-telecom {
 /* Contact Form */
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -270,7 +339,6 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-
 /* Footer Section */
 .social-icon {
   margin: 20px 10px;
@@ -278,36 +346,64 @@ input[type=submit]:hover {
 }
 
 /* Scroll Back to Top Button */
-#myBtn {
+#back-to-top-btn {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
-  right: 30px;
-  /* Place the button 30px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
-  background-color: green;
-  /* Set a background color */
-  color: white;
-  /* Text color */
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
   cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
-  /* Some padding */
-  border-radius: 10px;
-  /* Rounded corners */
-  font-size: 18px;
-  /* Increase font size */
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
 }
 
-#myBtn:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Animations */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }
