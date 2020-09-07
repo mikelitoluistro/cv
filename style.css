@@ -127,6 +127,7 @@ h2.expertise-heading {
   text-align: left;
 }
 
+
 .code-img {
   width: 30%;
   float: left;
@@ -134,7 +135,7 @@ h2.expertise-heading {
 }
 
 .amazon-img {
-  width: 25%;
+  width: 30%;
   float: right;
   margin-right: 30px;
 }
@@ -152,20 +153,15 @@ h2.expertise-heading {
 }
 
 .ansible-img {
-  width: 25%;
+  width: 20%;
   float: left;
   margin-right: 30px;
 }
 
-.python-img {
-  width: 20%;
-  float: right;
-  margin-right: 30px;
-}
 
 .troubleshooting-img {
   width: 30%;
-  float: left;
+  float: right;
   margin-right: 30px;
 }
 
