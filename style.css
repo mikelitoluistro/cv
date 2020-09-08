@@ -14,9 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* The navigation bar */
 #navigation-bar {
-  /* Set the navbar to fixed position */
-  /* position: fixed; */
-  /* Position the navbar at the top of the page */
   /* Full width */
   width: 100%;
 }
@@ -38,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   #heading-primary {
     /* The file size of this background image is 93% smaller
      * to improve page load speed on mobile internet connections */
-    background-image: url(images/background-photo-mobile-devices.jpg);
+    background-image: url("images/background-photo-mobile-devices.jpg");
   }
 }
 
@@ -85,9 +82,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
-
-
-
 /*Profile info*/
 #profile-info {
   background-color: #7fdbda;
@@ -114,6 +108,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.profile-about .position {
+  color: black;
+}
+
 /* Expertise Section */
 h2.expertise-heading {
   padding: 1.5% 0 1.5% 0;
@@ -126,7 +124,6 @@ h2.expertise-heading {
   margin: 100px auto 100px auto;
   text-align: left;
 }
-
 
 .code-img {
   width: 30%;
@@ -158,14 +155,13 @@ h2.expertise-heading {
   margin-right: 30px;
 }
 
-
 .troubleshooting-img {
   width: 30%;
   float: right;
   margin-right: 30px;
 }
 
-/* Licenses and certificate Section */
+/* Licenses and certifications Section */
 h2.licenses-and-certifications-heading {
   padding: 1.5% 0 1.5% 0;
   font-size: 3rem;
@@ -183,37 +179,31 @@ h2.licenses-and-certifications-heading {
 }
 
 .btn-oci {
-  /* position: relative; */
   margin: 5px auto 0px auto;
   width: 1000px;
 }
 
 .btn-aws {
-  /* position: relative; */
   margin: 5px auto 0px auto;
   width: 1000px;
 }
 
 .btn-machine-learning {
-  /* position: relative; */
   margin: 5px auto 0px auto;
   width: 1000px;
 }
 
 .btn-full-stack-udemy {
-  /* position: relative; */
   margin: 5px auto 0px auto;
   width: 1000px;
 }
 
 .btn-python-cloud-academy {
-  /* position: relative; */
   margin: 5px auto 0px auto;
   width: 1000px;
 }
 
 .btn-web-development-udemy {
-  /* position: relative; */
   margin: 5px auto 0px auto;
   width: 1000px;
 }
@@ -254,7 +244,23 @@ h2.experience-heading {
 
 .experience-position {
   border: 1px solid black;
-  text-align: justify;
+  text-align: left;
+}
+
+/* If the screen size is 520px to 1321px wide */
+@media (min-width: 520px) and (max-width: 1321px) {
+  .experience-row {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* If the screen size is 300px to 500px wide */
+@media (min-width: 300px) and (max-width: 500px) {
+  .experience-row {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 /* Awards Section */
@@ -289,50 +295,115 @@ h2.award-heading {
 
 .award-name {
   border: 1px solid black;
-  text-align: justify;
+  text-align: left;
+}
+
+/* If the screen size is 520px to 1321px wide */
+@media (min-width: 520px) and (max-width: 1321px) {
+  .award-row {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* If the screen size is 300px to 500px wide */
+@media (min-width: 300px) and (max-width: 500px) {
+  .award-row {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 /* Contact Form */
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+#contact-form {
+  background-image: url("images/bg-contact-form.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #81ecec;
+  padding-top: 45px;
+  padding-bottom: 100px;
+}
+
+.main {
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  border: 5px solid #2d3436;
+  border-left: 40px solid #0984e3;
+  box-shadow: 1px 2px 10px #555;
+}
+
+.info {
   width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: #6c5ce7;
+  padding: 7px;
+  text-shadow: 1px 1px 1px #222;
+  color: #fff;
+  font-size: 20px;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+.form-box {
   padding: 20px;
+}
+
+label {
+  color: #2d3436;
+  font-size: 18px;
+}
+
+.inp, .msg-box {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 2px solid #2d3436;
+  font-weight: bold;
+  border-right: 15px solid #2d3436;
+  border-left: 15px solid #2d3436;
+  resize: none;
+}
+
+.msg-box {
+  height: 80px;
+}
+
+.inp:focus, .msg-box:focus {
+  outline: none;
+  border: 2px solid #9b59b6;
+  border-right: 15px solid #9b59b6;
+  border-left: 15px solid #9b59b6;
+}
+
+.sub-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: none;
+  background: linear-gradient(#74b9ff, #6c5ce7);
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  /* text-shadow: 1px 1px 1px #444; */
+}
+
+.sub-btn:hover {
+  background: linear-gradient(#a29bfe, #6c5ce7);
+  opacity: 0.8;
+  transition: all ease-out 0.2s;
+}
+
+.sub-btn:focus {
+  outline: none;
+}
+
+@media(max-width: 720px) {
+  .main {
+    width: 90%;
+  }
 }
 
 /* Footer Section */
